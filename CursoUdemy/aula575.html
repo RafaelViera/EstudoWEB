@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Documento</title>
+
+        <style>
+            * {
+                margin: 10;
+                padding: 10;
+            }
+            
+            nav {
+                background: red;
+                display: flex;
+                align-items: center;
+            }
+
+            nav a{
+                color: whitesmoke;
+                text-decoration: none;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+                Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+                background: red;
+                padding: 10px;
+                text-transform: uppercase;
+            }
+
+            nav a:hover {
+                background: rgba(0, 0, 0, 0.3);
+            }
+
+            nav ul {
+                display: flex;
+                list-style: none;
+                background: red;
+                margin-left: 1%;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+            </ul>
+        </nav>
+        <ul>
+            <li>Hm 1</li>
+            <li>Hm 2</li>
+            <li>Hm 3</li>
+        </ul>
+
+        <ol type="I" start="10">
+            <li>Outra 1</li>
+            <li>Outra 2</li>
+            <li>Outra 3</li>
+            <li>Outra 10</li>
+        </ol>
+
+        <dl>
+            <dt>Café Preto</dt>
+            <dd>bebida viciante amarga</dd>
+        </dl>
+    </body>
+</html>
