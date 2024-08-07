@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 576</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 2000px;
+        }
+
+        table caption {
+            caption-side: bottom;
+            text-align: right;
+            font-style: italic;
+            font-size: 14px;
+            margin-left: 5px;
+        }
+
+        table tfoot, table thead{
+            background: #ddd;
+        }
+
+        table td, table th {
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 5px
+        }
+
+        .tabela-responsiva {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <p>Titulo com o intuito de gerar espeçamento para a proxima tabela a ser inserida.</p>
+
+    <div class="tabela-responsiva">
+        <table>
+            <caption>Descrição para a tabela</caption>
+            <thead>
+                <tr>
+                    <th>Coluna 01</th>
+                    <th>Coluna 02</th>
+                    <th>Coluna 03</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Corpo 01</td>
+                    <td>Corpo 02</td>
+                    <td>Corpo 03</td>
+                </tr>
+                <tr>
+                    <td colspan="2">AQUI</td>
+                    <td>Corpo 02</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="2"></td>
+                    <td>Total: R$ 300</td> 
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
