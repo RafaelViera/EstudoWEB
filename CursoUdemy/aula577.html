@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        label {
+            cursor: pointer; /* Diz que o 'label' é clicavel */
+        }    
+            
+    </style>
+    
+</head>
+
+<body>
+    <form>
+        <p>O meu formulário</p>
+        <p> <!--Type para entrada de texto padrão-->
+            <label for="nome">Seu nome:</label> <!--O 'for' recebe o 'id' do que ele se refere-->
+            <input type="text" id="nome" name="nome"
+            placeholder="Seu nome" required> 
+        </p>
+
+        <p> <!--Type de bolinha de marca, apenas 1 das 3-->
+            Genêro<br>
+            <label for="feminino">feminino</label> 
+            <input type="radio" id="feminino" name="genero" value="feminino"><br>
+            <label for="masculino">masculino</label> 
+            <input type="radio" id="masculino" name="genero" value="masculino"><br>
+            <label for="outro">outro</label> 
+            <input type="radio" id="outro" name="genero" value="outro">
+        </p>
+
+        <p> <!--Type para marcar a caixinha-->
+            <label for="dev1">Sou um dev</label> 
+            <input type="checkbox" id="dev1" name="dev1" value="sim"><br>
+            <label for="dev2">Sou um dev</label> 
+            <input type="checkbox" id="dev2" name="dev2" value="sim"><br>
+            <label for="dev3">Sou um dev</label> 
+            <input type="checkbox" id="dev3" name="dev3" value="sim">
+        </p>
+
+
+        <p>
+            <button type="reset">Reset</button>
+            <button type="submit">Enviar</button>
+        </p>
+    </form>
+</body>
+</html>
