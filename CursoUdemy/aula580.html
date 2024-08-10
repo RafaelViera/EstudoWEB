@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }       
+    </style>
+    
+</head>
+
+<body>
+    <form>
+        <p>O meu formulário</p>
+        
+        <p>
+            <label for="senha">Sua senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite a sua senha">
+        </p>
+
+        <p>
+            <label for="url">Sua url:</label>
+            <input type="url" id="url" name="url" placeholder="URL">
+        </p>
+
+        <p>
+            <label for="select">Sua alguam opção:</label>
+            <select id="select" name="select">
+                <optgroup label="Teste">
+                    <option value="qualquer 1" label="Label 1">
+                    <option value="qualquer 2" label="Label 2">
+                </optgroup>
+                <option value="qualquer 3" label="Label 3">
+            </select> 
+        </p>
+
+        <p>
+            <label for="textarea">Textarea</label> <!--"ROWS" E "COLS" é meio bugado, então melhor não usar-->
+            <textarea id="textarea" name="textarea" rows="6" cols="10">
+                Apenas
+            </textarea>
+        </p>
+
+        <p>
+            <button type="reset">Reset</button>
+            <button type="submit">Enviar</button>
+        </p>
+    </form>
+</body>
+</html>

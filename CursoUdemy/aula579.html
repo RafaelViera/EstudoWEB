@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }     
+    </style>
+    
+</head>
+
+<body>
+    <form>
+        <p>O meu formulário</p>
+        
+        <p>
+            <label for="data">Data padrão:</label>
+            <input type="data" id="data" name="data" value="2024-08-09"> <!--O 'name' e 'value' é usado para retorno no backend-->
+        </p>
+
+        <p>
+            <label for="datatime">Date Tempo:</label>
+            <input type="datetime-local" id="datetime" name="datetime" value="2024-08-09T19:00">
+        </p>
+
+        <p>
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" value="00:00">
+        </p>
+
+        <p>
+            <label for="cor">Cor preferida:</label>
+            <input type="color" id="cor" name="cor" value="#FF0000">
+        </p>
+
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email@email.com">
+        </p>
+
+        <p>
+            <label for="arquivo">Arquivo:</label> <!--O "accept" é para restringir quais tipos de arquivo recebe-->
+            <input type="file" id="arquivo" name="arquivo" accept=".png,.svg,image/*">
+        </p>
+
+        <p>
+            <label for="numero">Numero:</label>
+            <input type="number" id="numero" name="number" placeholder="Digite um número">
+        </p>
+
+        <p>
+            <button type="reset">Reset</button>
+            <button type="submit">Enviar</button>
+        </p>
+    </form>
+</body>
+</html>
