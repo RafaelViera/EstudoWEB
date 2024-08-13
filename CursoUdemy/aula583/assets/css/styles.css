@@ -1,0 +1,12 @@
+* { /*É o seletor de tudo, todos os elementos do html são selecionados*/
+    margin: 0;  /*Isso é quase padrão, para resetar o 'tamanho' de todos os elementos*/
+    padding: 0;
+}
+
+.colorRed {
+    color: red;
+}
+
+.mainContent h2 {
+    font-style: italic;
+}
