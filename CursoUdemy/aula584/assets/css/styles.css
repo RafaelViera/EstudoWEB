@@ -8,3 +8,12 @@
 .pai h1+p {
     color: darkblue;
 }
+
+.pai p+h1 {
+    color: yellow;
+}
+
+[meu-atributo] {
+    color: darkgreen;
+    font-size: 2000%;
+}

@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+[atributo01^="c"] {
+    color: red;
+}
+
+[atributo02$="l"] {
+    background-color: blue;
+}
+
+[atributo03*="R"] {
+    background-color: darkcyan;
+}
