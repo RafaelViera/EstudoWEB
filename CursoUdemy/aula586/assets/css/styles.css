@@ -1,0 +1,34 @@
+* {
+    margin: 3px;
+    padding: 3px;
+}
+
+.heading:hover {
+    background-color: blanchedalmond;
+    color: darkblue;
+    font-size: 500%;
+}
+
+.heading {
+    transition: all 3000ms ease-in-out;
+}
+
+input:focus {
+    box-shadow: rebeccapurple;
+}
+
+div p:not(.meio) {
+    background-color: blueviolet;
+}
+
+ul li:nth-child(odd) {
+    background: rebeccapurple;
+}
+
+ul li:nth-child(even) {
+    background: yellowgreen;
+}
+
+ul li:nth-child(5n) {
+    background: brown;
+}
