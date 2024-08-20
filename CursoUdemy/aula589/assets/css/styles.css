@@ -1,0 +1,17 @@
+* {
+    margin: 3px;
+    padding: 3px;
+}
+
+ul li:before{
+    content: ' - ';
+}
+
+ul li::after {
+    content: " - ";    
+}
+
+p::first-letter {
+    font-size:  50px;
+    background-color: blanchedalmond;
+}
