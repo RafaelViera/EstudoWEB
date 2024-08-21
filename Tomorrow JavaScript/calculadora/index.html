@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trabalho final I</title>
+        <link rel="stylesheet" href="./styles.css">
+        <script src="./script.js"></script>
+
+    </head>
+    <body>
+        <p id="head">Bem-vindo à Calculadora</p>
+        
+        <div id="entrada-valores">
+            <label for="primeiro-valor">Primeiro Valor:</label>
+            <input name="primeiro-valor" id="primeiro-valor" text="">
+
+            <p></p>
+            <label for="segundo-valor">Segundo Valor:</label>
+            <input name="segundo-valor" id="segundo-valor" text=""></input>
+        </div> 
+
+        <p></p>
+        <label for="opcoes-calculo">Escolha uma das seguinte opções</label>
+        <select name="opcoes-calculo" id="opcoes-calculo">
+            <option value="somar">Somar</option>
+            <option value="subtrair">Subtrair</option>
+            <option value="multiplicar">Multiplicar</option>
+            <option value="dividir">Dividir</option>
+        </select>
+
+        <p></p>
+        <button onclick="calcular()">Calcular</button>
+        <button onclick="limpar()">Limpar</button>
+
+        <div id="saida-valores">
+            <p></p>
+            <label for="saida-resposta">Resposta:</label>
+            <p name="saida-resposta" id="saida-resposta">ex: 12</p>
+        </div>
+    </body>
+</html>
