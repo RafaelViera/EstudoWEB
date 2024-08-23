@@ -1,0 +1,58 @@
+* {
+    background-color: beige;
+
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+footer {
+    background-color: red;
+    color: whitesmoke;
+    position: absolute;
+    bottom: 0px;
+    width: calc(100% - 5px);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+ 
+footer p {
+    background-color: red;
+}
+
+button {
+    border-color: yellow;
+}
+
+input {
+    border-color: yellow;
+}
+
+#head {
+    margin: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    
+    background-color: red;
+}
+
+#head p {
+    text-align: center;
+    font-size: 40px;
+    background-color: red;
+    color:yellow;
+}
+
+#principal {
+    background-color: rebeccapurple;
+}
+
+#mostrar-lista {
+    margin: 10px;
+}
+#mostrar-lista ul{
+    background-color: yellow;
+}
+
+#mostrar-lista li{
+    background-color: yellow;
+}
