@@ -2,7 +2,27 @@
     margin: 2px;
     padding: 0px;
     text-align: center;
-    background-color: blanchedalmond;
+    background-color: #5E5E5E;
+    color: white;
+}
+
+footer {
+    background-color: #800080;
+    color: whitesmoke;
+    position: absolute;
+    bottom: 0px;
+    width: calc(100% - 20px);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+ 
+footer p {
+    background-color: #800080;
+}
+
+footer div p {
+    text-align: bottom;
 }
 
 #head {
@@ -13,7 +33,8 @@
     text-transform: uppercase;
     font-size: larger;
     
-    background-color: blueviolet;
+    color: black;
+    background-color: #E6FF16;
 }
 
 #entrada-valores {

@@ -36,7 +36,9 @@ function calcular() {
 function limpar() {
     let prim = document.getElementById("primeiro-valor")
     let seg = document.getElementById("segundo-valor")
+    let resposta = document.getElementById("saida-resposta")
 
     prim.value = ""
     seg.value = ""
+    resposta.textContent = "ex: 01"
 }
