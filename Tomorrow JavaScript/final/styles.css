@@ -1,0 +1,22 @@
+body {
+    background-color: gray;
+    color: black;
+}
+
+#header {
+    padding: 30px;
+    text-align: center;
+    background-color: yellow;
+}
+
+#footer {
+    background-color: #800080;
+    color: whitesmoke;
+    position: absolute;
+    bottom: 0px;
+    width: calc(100% - 25px);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    height: 180px;
+}
