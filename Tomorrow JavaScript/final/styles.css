@@ -4,6 +4,7 @@ body {
 }
 
 #header {
+    margin-bottom: 5px;
     padding: 30px;
     text-align: center;
     background-color: yellow;
@@ -18,5 +19,5 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 5px;
-    height: 180px;
+    height: 130px;
 }

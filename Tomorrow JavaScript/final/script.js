@@ -1,14 +1,7 @@
-const seg = document.getElementById("seg")
-async function geraPokemon(id){
+async function geraPersonagem(id){
     let dataFetched;
 
-    let buttonFavorite = document.createElement("button")
-    buttonFavorite.onclick = () => {favoritar(id)}
-    buttonFavorite.textContent = "Favoritar Pokemon"
-
-    seg.appendChild(buttonFavorite)
-
-    dataFetched = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
+    dataFetched = await fetch(`https://rickandmortyapi.com/api/character/${id}`)
     .then(response => response.json())
     .then(data => {
         return data
@@ -17,24 +10,27 @@ async function geraPokemon(id){
     return dataFetched
 }
 
-function renderizaPokemon(resposta){
+function renderizaPersonagem(resposta, nomeID){
+    let prim = document.getElementById("prim")
+
     let image = document.createElement("img")
-    image.src = resposta.sprites.front_default
+    image.src = resposta.image
+    image.setAttribute("id", nomeID)
 
     prim.appendChild(image)
 }
 
 async function randomizar(nomeID) {
     let random3 = Math.ceil(Math.random() * (200 - 1) + 1)
-    const poke = await geraPokemon(random3)
+    const personagem = await geraPersonagem(random3)
 
     let image = document.getElementById(nomeID)
-    image.src = poke.sprites.front_default
+    image.src = personagem.image
 }
 
 function favoritar(id) {
     console.log(id)
-    fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
+    fetch(`https://rickandmortyapi.com/api/character/${id}`)
     .then(response => response.json())
     .then(data => {
         console.log(data)
@@ -49,15 +45,13 @@ function favoritar(id) {
     })
 }
 
-const prim = document.getElementById("prim")
-
 let random = Math.ceil(Math.random() * (200 - 1) + 1)
 let random2 = Math.ceil(Math.random() * (200 - 1) + 1)
 
-geraPokemon(random).then((resposta) => {
-    renderizaPokemon(resposta)
+geraPersonagem(random).then((resposta) => {
+    renderizaPersonagem(resposta,"personagem02")
 })
 
-geraPokemon(random2).then((resposta) => {
-    renderizaPokemon(resposta)
+geraPersonagem(random2).then((resposta) => {
+    renderizaPersonagem(resposta,"personagem01")
 })
