@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VALE RESALTAR QUE TODA ESSA FORMA DE ORGANIZAR E ESTRUTURAR PARA QUE 
+TENHA ESSA DIVISAO E O BOM COMPORTAMENTO DAS DIV'S EM COLUNAS. EM OUTRAS
+AULAS TEREMOS A NOVA E MELHOR FORMA DE FAZER ISSO. */
+
+/* Isso é uma macete para poder 'limpar' para que os elementos que vão vir 
+não fiquem a esquerda, retire o .grid::after para vc ver com fica */
+.grid::after {  
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.grid {
+    padding: 15px;
+}
+
+.grid .col {
+    width: 33.33%;
+    height: 300px;
+    float: left;
+    padding: 20px;
+}
+
+/* Tem algumas forma de selecionar cores em CSS */
+.grid .col-content{
+    width: 100%;
+    height: 100%;
+    /* background-color: #260651; */
+    /* background-color: rgb(123, 123, 1233); */
+    background-color: rgba(123, 123, 1233, 0.85);
+}
