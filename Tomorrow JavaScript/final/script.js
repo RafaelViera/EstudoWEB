@@ -7,43 +7,77 @@ async function geraPersonagem(id){
         return data
     })
     .catch(error => console.error('Erro:', error));
+
     return dataFetched
 }
 
 function renderizaPersonagem(resposta, nomeID){
+
     let prim = document.getElementById("prim")
 
-    let image = document.createElement("img")
+    let image = document.getElementById(nomeID)
     image.src = resposta.image
-    image.setAttribute("id", nomeID)
+
+    let favoritaButton;
+    if(nomeID == "personagem01"){
+        favoritaButton = document.getElementById("favorita-personagem01")
+        
+    }else{
+        favoritaButton = document.getElementById("favorita-personagem02")
+    }
+    favoritaButton.onclick = () => favoritar(resposta.name, resposta.image)
+
 
     prim.appendChild(image)
 }
 
 async function randomizar(nomeID) {
     let random3 = Math.ceil(Math.random() * (200 - 1) + 1)
-    const personagem = await geraPersonagem(random3)
-
+    let personagem;
+    
     let image = document.getElementById(nomeID)
-    image.src = personagem.image
+    if(nomeID == "personagem01"){
+        personagem = await geraPersonagem(random3).then((resposta) => {
+            renderizaPersonagem(resposta,"personagem01")
+            image.src = resposta.image
+        })
+        
+    }else{
+        personagem = await geraPersonagem(random3).then((resposta) => {
+            renderizaPersonagem(resposta,"personagem02")
+            image.src = resposta.image
+        })
+    }
 }
 
-function favoritar(id) {
-    console.log(id)
-    fetch(`https://rickandmortyapi.com/api/character/${id}`)
-    .then(response => response.json())
-    .then(data => {
-        console.log(data)
-        fetch("https://localhost:3000/create", {""
+async function favoritar(nome, imagem) {
+    console.log(nome, imagem)
+
+    const objetoP = {
+        nome: nome,
+        imagem: imagem,
+    }
+
+    console.log(objetoP)
+
+    fetch(`http://localhost:3000/create`, {
         method: "POST",                      
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data),
-      }).then((result) => result.json())
-      .then((data) => console.log(data)) 
-    })
+        body: JSON.stringify(objetoP),
+    });      
 }
+
+// function favoritar(id) {
+//     fetch(`https://rickandmortyapi.com/api/character/${id}`, {
+//         method: "POST",                      
+//         headers: {
+//           "Content-Type": "application/json",
+//         },
+//         body: JSON.stringify(data_to_add),
+//       });      
+//}
 
 let random = Math.ceil(Math.random() * (200 - 1) + 1)
 let random2 = Math.ceil(Math.random() * (200 - 1) + 1)
