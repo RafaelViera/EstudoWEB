@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+}
+
+.filha1, .filha2 {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    position: static;
+}
+
+.filha1 {
+    background: rgb(255, 215, 0, 0.7);
+    position: absolute;
+    bottom: -100px;
+    right: 400px;
+}
+
+.filha2 {
+    background: blueviolet;
+    float: left;
+}
+
+p {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    direction: rtl;
+    letter-spacing: normal;
+    word-spacing: 5px;
+    line-height: 25px;
+    text-align: center;
+    text-decoration: underline;
+    text-indent: 50px;
+    text-shadow: -1px -1px rebeccapurple;
+    text-transform: capitalize;
+}
