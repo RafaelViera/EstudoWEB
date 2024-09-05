@@ -35,3 +35,15 @@ não fiquem a esquerda, retire o .grid::after para vc ver com fica */
     /* background-color: rgb(123, 123, 1233); */
     background-color: rgba(123, 123, 1233, 0.85);
 }
+
+@media (max-width: 568px) {
+    .grid .col {
+        width: 100%;
+    }
+}
+
+@media (min-width: 569px) and (max-width: 768px){
+    .grid .col {
+        width: 50%;
+    }
+}
