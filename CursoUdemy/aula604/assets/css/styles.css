@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.flex-conteiner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    align-items: flex-start;
+
+    height: 800px;
+    background-color: rgb(36, 13, 57);
+}
+
+.flex-item {
+    /* 
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 200px;
+    margin: 1%; 
+    */
+
+    width: 100%;
+    background-color: rgb(120, 169, 126);
+}
+
+.flex-item:nth-child(1) {
+    order: 1;
+}

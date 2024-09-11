@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.flex-conteiner {
+    /* SEMPRE DE UMA LIDA NA DOCUMENTACAO ANTES */
+    display: flex;
+    /* DEFINA A DIREÇÃO DOS EIXOS, SÃO 2 */
+    flex-direction: row;
+    /* MEXE EM UM TAL EIXO */
+    justify-content: flex-start;
+    /* MEXE NO OUTRO EIXO */
+    align-items: flex-start;
+    /* FUNCIONA COMO UMA QUEBRA DE LINHA QND ACONTECER OVERFLOW */
+    flex-wrap: wrap;
+
+    background-color: yellow;
+    height: 640px;
+}
+
+.flex-item {
+    width: 320px;
+    color: #fff;
+    background-color: violet;
+}
