@@ -1,0 +1,26 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font: sans-serif;
+    font-size: 25px;
+}
+
+.grid {
+    display: grid;
+    /* COM UMA LINHA FIZEMOS UM SITE BASTANTE RESPONSIVO */
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-rows: 2fr 1fr;
+    gap: 20px;
+
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid div {
+    background-color: tomato;
+    min-height: 100px;
+}
