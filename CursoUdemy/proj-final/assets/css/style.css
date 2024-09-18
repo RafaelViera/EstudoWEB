@@ -1,0 +1,61 @@
+:root {
+    --primary-color: #330033;
+    --secundary-color: #440044;
+    --terciary-color: #D5FF00;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Lexend", sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 55px;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+h4 {
+    font-size: 45px;
+}
+
+h5 {
+    font-size: 40px;
+}
+
+h6 {
+    font-size: 30px; 
+}
+
+.main-bg {
+    background-image: url('../imgs/main-bg.svg');
+    background-position: center center;
+    color: #fff;
+}
+
+.secundary-bg {
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.section {
+    height: 100vh;
+}

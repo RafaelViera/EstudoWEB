@@ -1,12 +1,3 @@
 [
-	{
-		"nome": "Birdperson",
-		"imagem": "https://rickandmortyapi.com/api/character/avatar/47.jpeg",
-		"id": 0
-	},
-	{
-		"nome": "Kevin",
-		"imagem": "https://rickandmortyapi.com/api/character/avatar/191.jpeg",
-		"id": 1
-	}
+	
 ]
