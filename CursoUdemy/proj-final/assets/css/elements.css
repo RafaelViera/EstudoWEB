@@ -1,0 +1,39 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Lexend", sans-serif;
+    font-size: 20px;
+}
+
+a, li{
+    text-decoration: none;
+    list-style: none;
+}
+
+h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 55px;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+h4 {
+    font-size: 45px;
+}
+
+h5 {
+    font-size: 40px;
+}
+
+h6 {
+    font-size: 30px; 
+}

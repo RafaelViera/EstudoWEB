@@ -1,0 +1,19 @@
+.main-bg {
+    background-image: url('../imgs/main-bg.svg');
+    background-position: center center;
+    color: #fff;
+}
+
+.secundary-bg {
+    background-color: #fff;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.section {
+    height: 100vh;
+}
