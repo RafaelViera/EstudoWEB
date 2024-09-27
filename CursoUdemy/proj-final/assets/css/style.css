@@ -1,0 +1,32 @@
+.intro-content {
+    position: relative;
+    top: -40px;
+    
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    height: 100vh;
+}
+
+.intro-text-content, .intro-img{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-text-content h2 {
+    text-transform: uppercase;
+    font-size: 65px;
+    margin-bottom: 30px;
+    line-height: 1;
+}
+
+.intro-text-content p {
+    font-weight: 200;
+}
+
+.intro-img img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 90px;
+    margin-bottom: 0px;
+}

@@ -1,6 +1,7 @@
 .menu {
     border-bottom: 1px solid #EEEEEE;
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     right: 0;
@@ -44,4 +45,9 @@
 .menu ul li a:hover::after {
     width: 74%;
     left: 14%;
+}
+
+.menu-space {
+    height: 55px;
+    width: 100%;
 }
