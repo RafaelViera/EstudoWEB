@@ -30,7 +30,7 @@
 
     display: flex;
     flex-flow: column wrap;
-    justify-content: center ;    
+    justify-content: center;    
     text-align: center;
 }
 
@@ -42,4 +42,44 @@
 
 .top3-space {
     height: 100px;
+}
+
+.grid-one-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;  
+}
+
+.grid-description {
+    padding-bottom: 80px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    counter-reset: grid-counter;
+}
+
+.grid h3 {
+    font-size: 35px;
+
+    position: relative;
+    padding-left: 90px;
+    padding-bottom: 10px;
+}
+
+.grid h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    font-size: 70px;
+    font-style: italic;
+
+    position: absolute;
+    top: -30px;
+    left: 15px;
+    transform: rotate(10deg);
+}
+
+.grid-one p {
+    font-weight: 200;
 }
