@@ -4,7 +4,7 @@
     
     display: grid;
     grid-template-columns: 2fr 3fr;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .intro-text-content, .intro-img{
@@ -29,7 +29,7 @@
     gap: 30px;
 
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;    
     text-align: center;
 }
@@ -51,13 +51,19 @@
 }
 
 .grid-description {
-    padding-bottom: 80px;
+    padding-bottom: 60px;
+}
+
+#grid-description-gallery, #grid-heading-gallery {
+    text-align: center;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     counter-reset: grid-counter;
+    
+    gap: 20px;
 }
 
 .grid h3 {
@@ -82,4 +88,19 @@
 
 .grid-one p {
     font-weight: 200;
+}
+
+.gallery-img {
+    width: 100%;
+    max-width: 360px;
+    max-height: 360px;
+    overflow: hidden;
+}
+
+.gallery-img img {
+    transition: all 300ms ease-in-out;
+}
+
+.gallery-img img:hover {
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
