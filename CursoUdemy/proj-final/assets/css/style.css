@@ -130,3 +130,61 @@
     overflow: hidden;
     overflow-x: auto;
 }
+
+.contact-forms {
+    grid-column: span 2;
+}
+
+.contact-forms .form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.form-grupo {
+    flex: 1 1 320px;
+    margin-bottom: 10px;
+}
+
+.form-grupo label {
+    display: block;
+}
+
+.form-grupo input, .form-grupo textarea {
+    display: block;
+    border: none;
+    background: white;
+    padding: 15px 15px;
+    width: 97%;
+    font-size: 25px;
+    gap: 30px;
+}
+
+.form-grupo textarea {
+    width: 99%;
+}
+
+.form-grupo button {
+    margin-top: 10px;
+    border: 5px solid white;
+    background: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-grupo button:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.contact-space {
+    height: 80px;
+}
+
+.footer {
+    text-align: center;
+}
