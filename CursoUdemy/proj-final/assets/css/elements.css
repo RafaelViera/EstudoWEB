@@ -19,6 +19,30 @@ a, li{
     list-style: none;
 }
 
+table {
+    width: 100%;
+    min-width: 360px;
+}
+
+table caption {
+    text-align: left;
+    font-style: italic;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+table, th, td {
+    padding: 3px;
+
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, tfoot {
+    background-color: lightgrey;
+}
+
 h1 {
     font-size: 60px;
     text-transform: uppercase;

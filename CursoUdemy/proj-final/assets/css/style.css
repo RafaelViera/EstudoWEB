@@ -104,3 +104,29 @@
 .gallery-img img:hover {
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
+
+.tabela-conteiner {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;  
+    text-align: center;
+
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.tabela-conteiner h2 {
+    margin-top: 240px;
+    font-size: 80px;
+}
+
+.tabela-conteiner p {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.responsive-table {
+    overflow: hidden;
+    overflow-x: auto;
+}
